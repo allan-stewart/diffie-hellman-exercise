@@ -70,7 +70,7 @@ The resulting value is the encryption key we can use to encrypt messages for or 
 > 
 > This exercise is only for learning / demonstration purposes to help you understand the basic crypto concepts.
 
-If you use 42 for `B` and 77 as your secret (`a`) then you should get a key of 34.
+If you use 77 as `a` and 42 for `B` then you should get a key of 34.
 We will call this the "simpleKey".
 
 
@@ -78,7 +78,7 @@ We will call this the "simpleKey".
 That you can generate an encryption key,
 you should be able to decrypt messages from another party.
 
-To test that this is working correctly, generate a key using a secret `a = 38` and value from other person `B = 33`.
+To test that this is working correctly, generate a new key using a secret `a = 38` and value from other person `B = 33`.
 
 Then run the following command:
 ```
