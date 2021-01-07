@@ -3,14 +3,11 @@ using System.Numerics;
 
 namespace DiffieHellman
 {
-    partial class Program
+    class KeyExchange
     {
-        class KeyExchange
+        public void Exchange()
         {
-            public void Exchange()
-            {
-                Console.WriteLine("Put your key-exchange code here.");
-            }
-        }        
+            Console.WriteLine("Put your key-exchange code here.");
+        }
     }
 }

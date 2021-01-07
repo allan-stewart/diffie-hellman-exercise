@@ -45,7 +45,7 @@ For this exercise, we will use a modulus `p` value of 97
 and a base `g` of 18.
 
 The first step is to pick a secret integer `a` and generate a value to share with others.
-The value to share is `g^a mod p`; calulate this using `BigInteger.ModPow(g, a, p);`
+The value to share is `g^a mod p`; calculate this using `BigInteger.ModPow(g, a, p);`
 
 If you use 77 as your secret (`a`) you should get a value of 89.
 This is the `A` value you can share publicly so that you can generate a shared key with another person.
@@ -54,7 +54,7 @@ This is the `A` value you can share publicly so that you can generate a shared k
 ## Generating an Encryption Key
 You can calculate the secret key when you receive the public value `B` from the another person.
 They calculated `B` by calculating `g^b mod p` just as we did with our secret `a`,
-so we need to calulate `B^a mod p` (`BigInteger.ModPow(B, a, p)`).
+so we need to calculate `B^a mod p` (`BigInteger.ModPow(B, a, p)`).
 
 The resulting value is the encryption key we can use to encrypt messages for or decrypt messages from them.
 
@@ -65,7 +65,7 @@ The resulting value is the encryption key we can use to encrypt messages for or 
 > 
 > This exercise is only for learning / demonstration purposes to help you understand the basic crypto concepts.
 
-If you use 42 for `B` then you should get a key of 34.
+If you use 42 for `B` and 77 as your secret (`a`) then you should get a key of 34.
 We will call this the "simpleKey".
 
 
